@@ -39,7 +39,7 @@
                     alert("Password is mandatory field");
                     return false;
                 }
-                else if (cpasswd.length < 6 || cpasswd.length > 10)
+                else if (cpasswd.length < 6 || cpasswd.length > 20)
                 {
                     alert("Password should be within 6 to 10 digites!");
                     return false;
@@ -70,23 +70,22 @@
                     alert("Please Enter Your Address");
                     return false;
                 }
-                RegisterUser(cname,clname,cemail,cpasswd,cphno,cage,caddress);
+                RegisterUser(cname, clname, cemail, cpasswd, cphno, cage, caddress);
 
 
             }
-            function RegisterUser(cname,clname,cemail,cpasswd,cphno,cage,caddress) {
+            function RegisterUser(cname, clname, cemail, cpasswd, cphno, cage, caddress) {
                 $.ajax({
                     url: "Reg",
                     type: 'POST',
 //                    dataType: 'json',
-                    data: {cname:cname,clname:clname,cemail:cemail,cpasswd:cpasswd,cphno:cphno,cage:cage,caddress:caddress},
+                    data: {cname: cname, clname: clname, cemail: cemail, cpasswd: cpasswd, cphno: cphno, cage: cage, caddress: caddress},
                     success: function(response) {
                         var data = response.categories;
                         var d = $.parseJSON(data);
                         $.each(d, function(idx, obj) {
-//                    $('<option/>').val(obj.evntid).html(obj.evntname).appendTo('#evnt');
-                            $('#cat').append($('<option>').text(obj.cname).attr('value', obj.cid));
-                        });
+//                            alert(d);
+                        }
                     }
                 });
             }
@@ -159,6 +158,8 @@
                                         <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
                                         <input type="password" name="cpasswd"  class="form-control cpasswd" placeholder="Password" aria-describedby="basic-addon1">
                                     </div>
+                                    <span style="color:red">Note:Password should contain 6 to 10 digits,At least one digit, one upper case letter, one lower case letter and one special symbol like=mkyong1A@ </span>
+                                    <br>
                                     <h7>Phone Number:</h7>
                                     <div class="input-group form-group">
                                         <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
