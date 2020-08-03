@@ -34,24 +34,28 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h1>Rashtriya</h1><span>Mahila Seva Kendra Pvt Ltd</span></a>
-                     
+
+                        <h1>Rashtriya</h1><span>Mahila Seva Kendra Pvt Ltd</span>
                     </a>
-                        
+                     <img src="logo.png" alt="" style="width: 80px; height:80px;margin: 10px" class="img-responsive img-circle"/>
+                   
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
-                   
+
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.jsp">Home</a></li>
+                         <li class="active"><a href="index.jsp">Home</a></li>
                         <li><a href="AdminLogin.jsp">Admin</a></li>
                         <li><a href="RmkLogin.jsp">RMK</a></li>
                         <li><a href="NgoLogin.jsp">NGO</a></li>
                         <li><a href="CustLogin.jsp">User</a></li>
+
+
+                        </li>
                         <!--<li><a href="Donation.jsp">Donation</a></li>--> 
                         <!--<li><a href="Faq.jsp">FAQ</a></li>-->
                         <li><a href="Contact.jsp">Contact</a></li>
                         <li><a href="https://www.myloancare.in/free-cibil-score-calculator/">Cibil Score</a></li>
-
+                        <li><a href="Tutorial.jsp">Tutorial</a>
 
                     </ul>
                 </div>
