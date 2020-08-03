@@ -98,7 +98,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.jsp">Home</a></li>
                        
-                        <li><a href="Faq.jsp">FAQ</a></li>
+                        <!--<li><a href="Faq.jsp">FAQ</a></li>-->
                         <li class="active"><a href="#contact">Contact</a></li>
                         
                     </ul>

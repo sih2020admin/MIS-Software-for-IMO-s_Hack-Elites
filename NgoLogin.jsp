@@ -86,7 +86,7 @@
                                 <form role="form" action="NgoLogin" class="login-form" method="post" onsubmit="return NLogin()">
                                     <div class="input-group form-group">
                                         <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" name="nuname"  class="form-control nuname" placeholder="NGO Username" aria-describedby="basic-addon1">
+                                        <input type="email" name="nuname"  class="form-control nuname" placeholder="NGO Email" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group form-group">
                                         <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
